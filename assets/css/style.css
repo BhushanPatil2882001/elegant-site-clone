@@ -1,5 +1,8 @@
 :root{
     --bg-primary: #130e87;
+    --bg-pink: #f83496;
+
+    --text-secondary: #d8d7d7;
 
     --basic-transition: all 0.2s linear;
 
@@ -37,6 +40,9 @@
 
 .bg-white{
     background-color: #ffffff;
+}
+.bg-pink{
+    background-color: var(--bg-pink);
 }
 
 /* flex */
@@ -79,6 +85,13 @@
 
 .bold{
     font-weight: bold;
+}
+
+.text-primary{
+    color: var(--bg-primary);
+}
+.text-secondary{
+    color: var(--text-secondary);
 }
 
 
@@ -124,4 +137,59 @@ header{
     padding:20px 10px;
 }
 
+.menu-icon{
+    display: none;
+    font-size: 30px;
+}
+
 /* header end */
+
+/* MAIN START */
+
+/* HERO START */
+
+.hero{
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.hero h1{
+    font-size: 70px;
+}
+.hero-p-1{
+    font-size: 16px;
+    padding: 16px 0;
+}
+.hero-p-2{
+    font-size: 20px;
+    padding: 16px 0;
+}
+
+.hero h3{
+    font-size: 30px;
+}
+
+.hero-btn{
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+.hero-info{
+    margin: 70px 150px;
+}
+
+.star{
+    background-color:#2db67a;
+    color: white;
+    font-size: 14px;
+    padding: 2px;
+    line-height: 2;
+}
+.single-star{
+    color: #2db67a;
+}
+/* HERO END */
+
+
+/* MAIN END */

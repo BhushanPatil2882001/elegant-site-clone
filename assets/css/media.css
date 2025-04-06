@@ -48,6 +48,27 @@
     *[class^="col-"]{
         padding: 0 12px;
     }
+
+    /* hero start */
+    .hero{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero h1{
+        font-size: 50px;
+    }
+    .hero p{
+        font-size: 12px;
+    }
+    .hero h3{
+        font-size: 20px;
+    }
+    .hero-info{
+        margin: 0;
+    }
+    /* hero end */
 }
 
 @media(max-width: 992px){
@@ -66,6 +87,15 @@
     *[class^="col-"]{
         padding: 0 12px;
     }
+
+    /* hero start */
+    .menu-icon{
+        display: inline;
+    }
+    .nav-items{
+        display: none;
+    }
+    /* hero end */
 }
 
 @media(max-width: 1200px){
