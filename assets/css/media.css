@@ -84,6 +84,11 @@
         margin: 0;
     }
     /* hero end */
+    /* sell start */
+    .design{
+        text-align: center;
+    }
+    /* sell end */
 }
 
 @media(max-width: 992px){
@@ -111,6 +116,12 @@
         display: none;
     }
     /* hero end */
+    /* sell start*/
+    .sell{
+        text-align: center;
+    }
+    /* sell end */
+
 }
 
 @media(max-width: 1200px){

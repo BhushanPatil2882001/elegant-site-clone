@@ -395,5 +395,98 @@ header{
 
 /* build end */
 
+/* DESIGN START */
+
+.design .common-top-section h2{
+    color: #599bff;
+}
+
+.design .common-top-section button{
+    background-color: #599bff;
+}
+
+.design img{
+    width: 100%;
+    height: auto;
+}
+
+.design-img{
+    position: relative;
+}
+
+.design-img::after{
+    background: linear-gradient(120deg, rgba(55, 118, 255, 0) 45%, rgba(55, 118, 255, .1));
+    border-radius: 2000px;
+    content: "";
+    display: block;
+    height: 860px;
+    position: absolute;
+    right: -10%;
+    top: -14%;
+    width: 860px;
+    z-index: 1;
+}
+/* DESIGN END */
+
+/* for everyone start */
+
+.for-everyone{
+    background-color: #4a3de0;
+    line-height: 1.5;
+    padding: 80px 40px;
+    border-radius: 10px;
+}
+
+.for-everyone h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.for-everyone h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.for-everyone p{
+    font-size: 20px;
+}
+
+.everyone-container{
+    box-shadow: 10px 20px 50px 10px #4a3de08a;
+}
+
+/* for everyone end */
+
+/*  */
+
+.sell h2{
+    color: #39dd86;
+}
+
+.sell-btn{
+    background-color: #39dd86 !important;
+}
+
+.sell img{
+    width: 100%;
+    height: auto;
+}
+
+.sell-img{
+    position: relative;
+}
+
+.sell-img::after{
+    background: linear-gradient(145deg, rgba(52, 221, 135, 0) 55%, rgba(52, 221, 135, .5));
+    border-radius: 2000px;
+    bottom: -60px;
+    content: "";
+    display: block;
+    height: 800px;
+    position: absolute;
+    right: 0;
+    width: 800px;
+    z-index: -1;
+}
 
 /* MAIN END */
