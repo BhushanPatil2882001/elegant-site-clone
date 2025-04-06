@@ -30,6 +30,21 @@
     *[class^="col-"]{
         padding: 0 12px;
     }
+
+    /* divi start */
+    .play-button-container{
+        /* transform: translate(-50%, -50%) scale(0.5); */
+        height: 82px;
+        width: 82px;
+    }
+    .play-button{
+        height: 60px;
+        width: 60px;
+    }
+    .play-button svg{
+        scale: 0.7;
+    }
+    /* divi end */
 }
 
 @media(max-width: 768px){
