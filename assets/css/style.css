@@ -1,0 +1,127 @@
+:root{
+    --bg-primary: #130e87;
+
+    --basic-transition: all 0.2s linear;
+
+    --basic-shadow: 0px 2px 10px rgb(182, 182, 182);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------------- utility classes ---------------- */
+
+.container{
+    max-width: 1320px;
+    margin: auto;
+}
+
+
+.border-1{
+    border: 1px solid black;
+}
+.border-2{
+    border: 1px solid yellow;
+}
+.border-3{
+    border: 1px solid blue;
+}
+
+/* backgrounds */
+
+.bg-white{
+    background-color: #ffffff;
+}
+
+/* flex */
+
+.flex{
+    display: flex;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+
+.gap-10{
+    gap: 10px;
+}
+.gap-20{
+    gap: 20px;
+}
+.gap-30{
+    gap: 30px;
+}
+
+/* font */
+
+.text-center{
+    text-align: center;
+}
+
+.text-white{
+    color: #ffffff;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+
+/* pointers and hover */
+.pointer{
+    cursor: pointer;
+}
+.hover-white{
+    transition: var(--basic-transition);
+}
+.hover-white:hover{
+    filter: brightness(0.9);
+}
+.hover:hover{
+    filter: brightness(1.1);
+}
+
+/* button */
+.btn{
+    border: none;
+    padding: 16px 32px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--basic-transition);
+}
+.btn:hover{
+    transform: translateY(-4px);
+    box-shadow: var(--basic-shadow);
+}
+.btn:active{
+    transform: translateY(0px);
+}
+
+
+/* ---------------- utility classes END---------------- */
+
+/* header start */
+
+header{
+    background-color: var(--bg-primary);
+    padding:20px 10px;
+}
+
+/* header end */
