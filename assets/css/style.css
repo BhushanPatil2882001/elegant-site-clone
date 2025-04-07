@@ -410,22 +410,18 @@ header{
     height: auto;
 }
 
+.design-img :nth-child(2){
+    width: 70%;
+    position: absolute;
+    bottom: -100px;
+    left: -150px;
+}
+
 .design-img{
     position: relative;
 }
 
-.design-img::after{
-    background: linear-gradient(120deg, rgba(55, 118, 255, 0) 45%, rgba(55, 118, 255, .1));
-    border-radius: 2000px;
-    content: "";
-    display: block;
-    height: 860px;
-    position: absolute;
-    right: -10%;
-    top: -14%;
-    width: 860px;
-    z-index: 1;
-}
+
 /* DESIGN END */
 
 /* for everyone start */
@@ -468,12 +464,24 @@ header{
 }
 
 .sell img{
-    width: 100%;
+    width: 70%;
     height: auto;
+    box-shadow: 0px 0px 30px 1px rgba(0, 0, 255, 0.13);
+    z-index: 1;
 }
 
 .sell-img{
     position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    z-index: 10;
+}
+.sell-img :nth-child(2){
+    position: absolute;
+    left: 0;
+    top: -100px;
+    z-index: 0;
 }
 
 .sell-img::after{
@@ -488,5 +496,61 @@ header{
     width: 800px;
     z-index: -1;
 }
+
+/* sell end */
+
+/* power start */
+
+.power-main{
+    background-color: #3ade9d;
+    padding: 80px 40px;
+    border-radius: 8px;
+}
+
+.power-main h2{
+    font-size: 70px;
+}
+.power-main h3{
+    font-size: 30px;
+}
+.power-main p{
+    font-size: 20px;
+}
+
+.power-secondary{
+    box-shadow: var(--basic-shadow);
+    padding: 20px 60px;
+    border-radius: 8px;
+    position: absolute;
+    background-color: white;
+    right: 50px;
+    bottom: -100px;
+    overflow: hidden;
+}
+.power-secondary h2{
+    color: #2041e7;
+    font-size: 70px;
+}
+.power-secondary h3{
+    font-size: 30px;
+}
+.power-secondary p{
+    line-height: 1.5;
+}
+.power-btn{
+    background-color: #2041e7;
+    text-transform: uppercase;
+    width: 50%;
+    align-self: center;
+}
+
+.power-container svg{
+    bottom: -35%;
+    margin-left: -10%;
+    position: absolute;
+    width: 65%;
+    z-index: -1;
+}
+/* power end */
 
 /* MAIN END */

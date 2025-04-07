@@ -45,6 +45,14 @@
         scale: 0.7;
     }
     /* divi end */
+    /* categories start */
+    .category-item:nth-child(2){
+        position: static;
+    }
+    .category-item.col-sm-12{
+        width: 100% !important;
+    }
+    /* categories end */
 }
 
 @media(max-width: 768px){
@@ -120,6 +128,9 @@
     .sell{
         text-align: center;
     }
+    .sell-img{
+        margin-top: 200px;
+    }
     /* sell end */
 
 }
@@ -140,6 +151,14 @@
     *[class^="col-"]{
         padding: 0 12px;
     }
+    /* power start */
+    .power-secondary{
+        position: static;
+    }
+    .power-secondary h2{
+        font-size: 40px;
+    }
+    /* power end */
 }
 
 @media(max-width: 1400px){
