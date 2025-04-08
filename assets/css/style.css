@@ -159,6 +159,9 @@
 header{
     background-color: var(--bg-primary);
     padding:20px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .menu-icon{
@@ -453,7 +456,7 @@ header{
 
 /* for everyone end */
 
-/*  */
+/* sell start */
 
 .sell h2{
     color: #39dd86;
@@ -501,6 +504,7 @@ header{
 
 /* power start */
 
+
 .power-main{
     background-color: #3ade9d;
     padding: 80px 40px;
@@ -540,7 +544,6 @@ header{
 .power-btn{
     background-color: #2041e7;
     text-transform: uppercase;
-    width: 50%;
     align-self: center;
 }
 
@@ -552,5 +555,29 @@ header{
     z-index: -1;
 }
 /* power end */
+
+/* social start */
+
+.social .card{
+    box-shadow: var(--basic-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 0;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+.footer-top > div{
+    margin-top: 16px;
+}
+
+.footer-top > div > div{
+    overflow: hidden;
+}
+
+/* social end */
+
 
 /* MAIN END */
