@@ -80,6 +80,9 @@
 .gap-10{
     gap: 10px;
 }
+.gap-15{
+    gap: 15px
+}
 .gap-20{
     gap: 20px;
 }
@@ -569,11 +572,29 @@ header{
     border-radius: 6px;
 }
 
-.footer-top > div{
+.footer-top > div, .footer-mid > div{
     margin-top: 16px;
 }
 
 .footer-top > div > div{
+    overflow: hidden;
+}
+
+/* footer top end */
+
+/* footer mid start */
+
+.footer-mid{
+    color: #856a72;
+    margin: 40px 0;
+}
+.footer-mid ul li{
+    cursor: pointer;
+}
+.footer-mid ul li:hover{
+    filter: brightness(0.5);
+}
+.footer-mid > div > div{
     overflow: hidden;
 }
 
