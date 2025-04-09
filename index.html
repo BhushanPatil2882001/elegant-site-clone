@@ -46,7 +46,7 @@
         <!-- HERO SECTION START-->
         <section class="hero">
             <div class="container text-white flex">
-                <div class="hero-info">
+                <div class="col-6 col-xl-12 hero-info">
                     <h1>WordPress<br /> Unleshaed</h1>
                     <p class="hero-p-1 text-secondary">Excellent 24,505
                         <span class="star"><i class="ri-star-fill"></i></span>
@@ -64,6 +64,9 @@
                     <p class="hero-p-2 text-secondary">Join 974,548 Empowered Web Design Proffesionals & Business Owners
                     </p>
                     <button class="hero-btn btn hover bg-pink text-white">UNLOCK THE POWER OF DIVI</button>
+                </div>
+                <div class="col-6 hero-video">
+                    <video src="./assets/Videos/build.mp4" autoplay loop muted></video>
                 </div>
             </div>
         </section>
@@ -121,7 +124,7 @@
                             </div>
                         </div>
                         <div class="divi-video">
-                            <img src="./assets/images/divi/video-model.jpg" alt="" width="100%">
+                            <img src="./assets/images/divi/video-model.jpg" alt="" width="100%" autoplay loop muted>
                         </div>
 
                     </div>
@@ -133,19 +136,19 @@
         <section class="categories p-50">
             <div class="container flex justify-center align-center flex-column">
                 <div class="categories-container flex relative wrap align-center justify-center">
-                    <div class="col-4 col-md-6 col-sm-12 category-item flex wrap pointer hover-white">
+                    <div class="col-4 col-md-6 col-sm-12 category-item flex wrap pointer">
                         <div>
                             <img src="./assets/images/categories/1.jpg" alt="">
                             <p class="text-center">Online Stores</p>
                         </div>
                     </div>
-                    <div class="col-4 col-md-6 col-sm-12 category-item flex wrap pointer hover-white">
+                    <div class="col-4 col-md-6 col-sm-12 category-item flex wrap pointer">
                         <div>
                             <img src="./assets/images/categories/2.jpg" alt="">
                             <p class="text-center">Online Stores</p>
                         </div>
                     </div>
-                    <div class="col-4 col-md-6 col-sm-12 category-item flex wrap pointer hover-white">
+                    <div class="col-4 col-md-6 col-sm-12 category-item flex wrap pointer">
                         <div>
                             <img src="./assets/images/categories/3.jpg" alt="">
                             <p class="text-center">Online Stores</p>
@@ -153,19 +156,19 @@
                     </div>
                 </div>
                 <div class="categories-container flex relative wrap align-center justify-center">
-                    <div class="col-4 col-md-6 col-sm-12 category-item flex wrap pointer hover-white">
+                    <div class="col-4 col-md-6 col-sm-12 category-item flex wrap pointer">
                         <div>
                             <img src="./assets/images/categories/4.jpg" alt="">
                             <p class="text-center">Online Stores</p>
                         </div>
                     </div>
-                    <div class="col-4 col-md-6 col-sm-12 category-item flex wrap pointer hover-white">
+                    <div class="col-4 col-md-6 col-sm-12 category-item flex wrap pointer">
                         <div>
                             <img src="./assets/images/categories/5.jpg" alt="">
                             <p class="text-center">Online Stores</p>
                         </div>
                     </div>
-                    <div class="col-4 col-md-6 col-sm-12 category-item flex wrap pointer hover-white">
+                    <div class="col-4 col-md-6 col-sm-12 category-item flex wrap pointer">
                         <div>
                             <img src="./assets/images/categories/6.jpg" alt="">
                             <p class="text-center">Online Stores</p>
@@ -198,7 +201,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="build-main flex wrap align-center justify-center">
+                <div class="build-main flex wrap align-center justify-center relative">
                     <div class="build-left col-2 col-xl-12 flex flex-column align-center">
                         <button class="build-btn btn hover pointer flex align-center gap-10">
                             <span><i class="ri-play-circle-line"></i></span>
@@ -217,11 +220,21 @@
                             BULK EDITING
                         </button>
                     </div>
+                    <svg class="svg-shape" viewBox="0 0 300 322">
+                        <title>Colorful Shapes</title>
+                        <defs>
+                            <linearGradient id="gradient-3" gradientTransform="rotate(90)">
+                                <stop offset="5%" stop-color="rgba(233,244,255,0)"></stop>
+                                <stop offset="95%" stop-color="rgba(233,244,255,1)"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#gradient-3)" d="M300,196.58v-71.16c0-31.57-16.84-60.75-44.19-76.53l-61.63-35.58c-27.34-15.79-61.03-15.79-88.37,0 L44.19,48.89C16.84,64.67,0,93.85,0,125.42v71.16c0,31.57,16.84,60.75,44.19,76.53l61.63,35.58c27.34,15.79,61.03,15.79,88.37,0 l61.63-35.58C283.16,257.33,300,228.15,300,196.58z"></path>
+                    </svg>
                     <div class="build-mid col-8 col-xl-12">
-                        <video src="./assets/Videos/build.mp4" autoplay></video>
+                        <video src="./assets/Videos/build.mp4" autoplay loop muted></video>
                     </div>
                     <div class="build-left build-right col-2 col-xl-12
-                    flex flex-column align-center">
+                    flex flex-column align-center relative">
                         <button class="build-btn btn hover pointer flex align-center gap-10">
                             <span><i class="ri-play-circle-line"></i></span>
                             BUILD VISUALLY
@@ -358,43 +371,43 @@
         <section class="social p-100">
             <div class="container flex flex-column">
                 <div class="footer-top flex flex wrap">
-                    <div class="col-2 col-md-4 col-sm-6">
-                        <div class="card hover-white pointer">
+                    <div class="col-2 col-lg-4 col-md-6">
+                        <div class="card pointer">
                             <i class="ri-facebook-fill"></i>
                             <p>156k</p>
                             <p>Followers</p>
                         </div>
                     </div>
-                    <div class="col-2 col-md-4 col-sm-6">
-                        <div class="card hover-white pointer">
+                    <div class="col-2 col-lg-4 col-md-6">
+                        <div class="card pointer">
                             <i class="ri-team-line"></i>
                             <p>156k</p>
                             <p>Followers</p>
                         </div>
                     </div>
-                    <div class="col-2 col-md-4 col-sm-6">
-                        <div class="card hover-white pointer">
+                    <div class="col-2 col-lg-4 col-md-6">
+                        <div class="card pointer">
                             <i class="ri-twitter-fill"></i>
                             <p>156k</p>
                             <p>Followers</p>
                         </div>
                     </div>
-                    <div class="col-2 col-md-4 col-sm-6">
-                        <div class="card hover-white pointer">
+                    <div class="col-2 col-lg-4 col-md-6">
+                        <div class="card pointer">
                             <i class="ri-mail-fill"></i>
                             <p>156k</p>
                             <p>Followers</p>
                         </div>
                     </div>
-                    <div class="col-2 col-md-4 col-sm-6">
-                        <div class="card hover-white pointer">
+                    <div class="col-2 col-lg-4 col-md-6">
+                        <div class="card pointer">
                             <i class="ri-youtube-fill"></i>
                             <p>156k</p>
                             <p>Followers</p>
                         </div>
                     </div>
-                    <div class="col-2 col-md-4 col-sm-6">
-                        <div class="card hover-white pointer">
+                    <div class="col-2 col-lg-4 col-md-6">
+                        <div class="card pointer">
                             <i class="ri-dribbble-line"></i>
                             <p>156k</p>
                             <p>Followers</p>

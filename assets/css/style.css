@@ -163,11 +163,16 @@
 /* header start */
 
 header{
-    background-color: var(--bg-primary);
+    background-color: #8914ba;
     padding:20px 10px;
     position: sticky;
     top: 0;
     z-index: 999;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
 }
 
 .menu-icon{
@@ -185,10 +190,11 @@ header{
     background-image: url(../images/hero-bg.jpg);
     background-size: cover;
     background-position: bottom;
+    overflow: hidden;
 }
 
 .hero h1{
-    font-size: 70px;
+    font-size: 90px;
 }
 .hero-p-1{
     font-size: 16px;
@@ -209,7 +215,8 @@ header{
 }
 
 .hero-info{
-    margin: 70px 150px;
+    /* margin: 70px 150px; */
+    margin: 70px 0;
 }
 
 .star{
@@ -222,6 +229,20 @@ header{
 .single-star{
     color: #2db67a;
 }
+
+.hero-video{
+    transform: rotateY(0deg) rotateX(-16deg) rotateX(24deg) skewY(-16deg) skewX(32deg);
+    margin-top: 50px;
+}
+
+.hero-video video{
+    transform: translateZ(0);
+    box-shadow: -90px 96px 96px -64px rgba(23, 16, 159, .5), -200px 160px 160px -100px rgba(23, 16, 159, .1);
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 20px;
+}
 /* HERO END */
 
 /* DIVI START */
@@ -233,7 +254,10 @@ header{
     line-height: 1.5;
 }
 .common-top-section h3{
-    font-size: 26px;
+    font-size: 30px;
+}
+.common-top-section p{
+    font-size: 20px;
 }
 .common-top-section .pointer{
     margin-bottom: 26px;
@@ -348,9 +372,14 @@ header{
 
 /* categories start */
 
+.category-item img:hover{
+    box-shadow: 0 8px 60px 0 rgba(103,151,255,.19),0 12px 90px 0 rgba(103,151,255,.19);
+}
+
 .category-item img{
     width: 100%;
     height: auto;
+    transition: var(--basic-transition);
 }
 
 .category-item:nth-child(2){
@@ -378,6 +407,28 @@ header{
 .build-main{
     margin-top: 80px;
 }
+.build-main svg{
+    bottom: -35%;
+    left: 13%;
+    opacity: .5;
+    position: absolute;
+    transform: rotate(10deg);
+    width: 55%;
+    z-index: 1;
+}
+
+.build-main::before{
+    background: rgba(0, 181, 230, .5);
+    left: -30px;
+    top: 310px;
+    border-radius: 2000px;
+    content: "";
+    display: block;
+    height: 96px;
+    position: absolute;
+    width: 96px;
+    z-index: 1;
+}
 
 .build-btn i{
     font-size: 20px;
@@ -386,13 +437,13 @@ header{
 
 .build-btn{
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 20px #3776ff09;
+    box-shadow: 0 8px 60px 0 rgba(103,151,255,.11),0 12px 90px 0 rgba(103,151,255,.11);
     padding: 16px 0px;
     background-color: #fff;
 }
 .build-btn:hover{
     transform: scaleX(1.1);
-    box-shadow: 0px 0px 10px 20px #3776ff09;
+    box-shadow: 0 8px 60px 0 rgba(103,151,255,.19),0 12px 90px 0 rgba(103,151,255,.19);
 }
 .build-btn:hover i{
     color: #3776ff;
@@ -401,6 +452,19 @@ header{
 .build-left .build-btn{
     width: 200px;
     margin: 20px 0;
+}
+
+.build-right::after{
+    background: rgba(143, 66, 236, .15);
+    right: 20%;
+    top: -20px;
+    border-radius: 2000px;
+    content: "";
+    display: block;
+    height: 96px;
+    position: absolute;
+    width: 96px;
+    z-index: -1;
 }
 
 .build-mid video{
@@ -571,8 +635,15 @@ header{
 
 /* social start */
 
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .social .card{
-    box-shadow: var(--basic-shadow);
+    height: 130px;
+    width: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -580,10 +651,22 @@ header{
     padding: 16px 0;
     background-color: #ffffff;
     border-radius: 6px;
+    box-shadow: 0 2px 8px 0 rgba(103, 151, 255, .09), 0 4px 32px 0 rgba(103, 151, 255, .09);;
+    transition: var(--basic-transition);
+    justify-content: center;
+}
+.footer-top > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-top > div, .footer-mid > div{
     margin-top: 16px;
+}
+
+.card:hover{
+    box-shadow: 0 2px 8px 0 rgba(103, 151, 255, .17), 0 4px 32px 0 rgba(103, 151, 255, .17) !important;;
 }
 
 .footer-top > div > div{
